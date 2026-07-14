@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Landing</title>
+    <meta name="title" content="Agecny Landing">
+    <meta name="description" content="EDITING WITH DEPTH. POWERED BY 3D">
+    <meta name="keywords" content="편집, 영상, 모델링, 랜더링, 모션그래픽">
+    <meta name="author" content="JU JONG HWAN">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="agecny landing">
+    <meta property="og:title" content="Agecny Landing">
+    <meta property="og:description" content="EDITING WITH DEPTH. POWERED BY 3D">
+    <meta property="og:image" content="img/main.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Michroma&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/onescroll.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="logo">Portfolio</div>
+
+        <!-- 햄버거 -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">main</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="video/toy.mp4" type="video/mp4">
+            </video>
+            <div class="hero-text">
+                <span>Portfolio</span>
+
+                <h1>EDITING<br>WITH DEPTH.
+                </h1>
+
+                <h2>POWERED BY 3D.</h2>
+            </div>
+
+            <div class="hero-box"><img src="img/skill3.gif" alt=""></div>
+
+        </section>
+
+        <section class="feature fade-up">
+
+            <div class="left">
+                <div class="line"></div>
+
+                <h2>
+                    JU JONG HWAN
+                </h2>
+            </div>
+
+            <div class="right">
+                <img src="img/profile.jpg" alt="">
+                <h3>About Me</h3>
+                <p>영상 편집과 모션그래픽을 제작합니다.</p>
+            </div>
+
+            <a href="mailto:whdghks1222@naver.com?subject=채용 문의&body=안녕하세요. 포트폴리오 보고 연락드립니다." class="hire-btn">
+                채용하기
+            </a>
+
+
+
+        </section>
+
+        <section class="cards">
+
+            <div class="swiper cardsSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- 카드 1 -->
+                    <div class="swiper-slide">
+                        <div class="item" data-video="video/moving.mp4">
+
+                            <video class="thumb" autoplay muted loop playsinline>
+                                <source src="video/moving.mp4" type="video/mp4">
+                            </video>
+
+                            <h4>무빙 영화인트로 카피</h4>
+
+                        </div>
+                    </div>
+
+                    <!-- 카드 2 -->
+                    <div class="swiper-slide">
+                        <div class="item" data-video="video/test2.mp4">
+
+                            <div class="thumb"></div>
+
+                            <h4>텍스트 텍스트</h4>
+
+                        </div>
+                    </div>
+
+                    <!-- 카드 3 -->
+                    <div class="swiper-slide">
+                        <div class="item" data-video="video/test3.mp4">
+
+                            <div class="thumb"></div>
+
+                            <h4>텍스트 텍스트</h4>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item" data-video="video/test4.mp4">
+                            <div class="thumb"></div>
+                            <h4>텍스트 텍스트 4</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+        <!-- 팝업 -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <video id="popupVideo" controls></video>
+            </div>
+        </div>
+
+        <section class="showcase">
+
+            <div class="bg-number">26</div>
+
+            <div class="swiper showcaseSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/1.mp4" type="video/mp4">
+
+                            </video>
+
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/2.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/3.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/2.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/2.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="poster">
+
+                            <video class="poster-video" autoplay muted loop playsinline preload="metadata">
+
+                                <source src="video/2.mp4" type="video/mp4">
+
+                            </video>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="swiper-pagination"></div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
